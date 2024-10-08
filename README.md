@@ -1,2 +1,0 @@
-# AFFAN
-menghitung bilangan deret
