@@ -1,9 +1,27 @@
-# Fungsi untuk menghitung jumlah deret bilangan ganjil
-def jumlah_deret_ganjil(n):
-    return n * n
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Deret Bilangan Ganjil</title>
+    <script>
+        // Fungsi untuk menghitung jumlah deret bilangan ganjil
+        function hitungDeretGanjil() {
+            // Mendapatkan input dari pengguna
+            var n = parseInt(document.getElementById("jumlah_suku").value);
+            
+            // Menghitung jumlah deret bilangan ganjil
+            var jumlah = n * n;
 
-# Meminta input dari pengguna
-n = int(input("Masukkan jumlah suku (n): "))
+            // Menampilkan hasil perhitungan
+            document.getElementById("hasil").innerHTML = "Jumlah dari " + n + " bilangan ganjil pertama adalah: " + jumlah;
+        }
+    </script>
+</head>
+<body>
+    <h1>Menghitung Jumlah Deret Bilangan Ganjil</h1>
 
-# Menghitung dan menampilkan hasil
-print(f"Jumlah dari {n} bilangan ganjil pertama adalah: {jumlah_deret_ganjil(n)}")
+    <label for="jumlah_suku">Masukkan jumlah suku (n):</label>
+    <input type="number" id="jumlah_suku" placeholder="Contoh: 5"><br><br>
+
+    <button onclick="hitungDeretGanjil()">Hitung</button>
